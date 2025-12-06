@@ -98,7 +98,6 @@ Perfume-Shop-FullStack/
 │   └── vite.config.js
 │
 └── README.md
-````
 
 ---
 
