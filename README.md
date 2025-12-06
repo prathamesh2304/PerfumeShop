@@ -70,8 +70,7 @@ This application was developed as part of an internship assignment to showcase f
 
 ## 📂 Folder Structure
 
-```
-
+````
 Perfume-Shop-FullStack/
 │
 ├── Backend/
@@ -99,7 +98,6 @@ Perfume-Shop-FullStack/
 │   └── vite.config.js
 │
 └── README.md
-
 ````
 
 ---
