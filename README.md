@@ -70,19 +70,25 @@ This application was developed as part of an internship assignment to showcase f
 
 ## 📂 Folder Structure
 
-````
 Perfume-Shop-FullStack/
 │
 ├── Backend/
-│   ├── config/db.js
-│   ├── models/Product.js
-│   ├── routes/products.js
-│   ├── seed/seed.js
-│   ├── scripts/update-product-images.js
+│   ├── config/
+│   │   └── db.js
+│   ├── models/
+│   │   └── Product.js
+│   ├── routes/
+│   │   └── products.js
+│   ├── seed/
+│   │   └── seed.js
+│   ├── scripts/
+│   │   └── update-product-images.js
 │   ├── server.js
-│   └── .env  (ignored in git)
+│   └── .env                 # (ignored in git)
 │
 ├── Frontend/
+│   ├── public/
+│   │   └── images/
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── Hero.jsx
@@ -93,8 +99,6 @@ Perfume-Shop-FullStack/
 │   │   ├── api.js
 │   │   ├── main.jsx
 │   │   └── index.css
-│   ├── public/
-│   │   └── images/
 │   └── vite.config.js
 │
 └── README.md
