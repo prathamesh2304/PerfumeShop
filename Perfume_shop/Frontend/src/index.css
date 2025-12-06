@@ -1,59 +1,31 @@
-/* src/index.css — global styles (no @apply for base to avoid PostCSS/Tailwind issues) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap');
+﻿/* src/index.css - Tailwind + small base styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Use explicit CSS properties instead of @apply for base styles */
+/* Minimal base styles so site looks consistent */
 :root {
   --brand: #b91c6b;
   --muted: #6b7280;
-  --bg: #f9fafb; /* bg-gray-50 equivalent */
-  --text: #0f172a; /* gray-900 */
+  --bg: #f9fafb;
+  --text: #0f172a;
 }
-
-html, body, #root { height: 100%; }
-
+html,body,#root { height:100%; }
 body {
-  background-color: var(--bg);
-  color: #111827;
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  line-height: 1.6;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* Headings use a serif for premium look */
-h1,h2,h3,h4 { font-family: 'Merriweather', serif; color: var(--text); }
-
-/* Container width */
-.container { max-width: 1180px; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
-
-/* Buttons */
+h1,h2,h3,h4 { font-family: "Merriweather", serif; }
 .btn-primary {
-  background-color: var(--brand);
+  --bg: var(--brand);
+  background: var(--bg);
   color: white;
-  padding: 0.5rem 1.25rem;
-  border-radius: 0.5rem;
+  padding: .6rem 1.25rem;
+  border-radius: .5rem;
   box-shadow: 0 6px 16px rgba(185,28,107,0.12);
-  transition: background-color .12s ease;
-}
-.btn-primary:hover { opacity: .95; }
-
-/* Card simple */
-.card { background: white; border-radius: .5rem; box-shadow: 0 4px 10px rgba(2,6,23,0.06); overflow: hidden; }
-
-/* Image helpers */
-.hero-image, .card-image, .product-main-image { width: 100%; object-fit: cover; display: block; }
-
-/* Heights */
-@media (min-width: 768px) {
-  .hero-image { height: 360px; }
-  .card-image { height: 220px; }
-  .product-main-image { height: 420px; }
-}
-@media (max-width: 767px) {
-  h1 { font-size: 1.6rem; }
-  .product-main-image { height: 300px; }
 }

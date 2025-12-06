@@ -1,0 +1,9 @@
+﻿# Root .gitignore for Perfume Shop
+node_modules/
+**/node_modules/
+dist/
+build/
+.env
+*.log
+.vscode/
+.DS_Store

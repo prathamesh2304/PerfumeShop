@@ -1,0 +1,4 @@
+﻿# Backend ignores
+node_modules/
+.env
+npm-debug.log

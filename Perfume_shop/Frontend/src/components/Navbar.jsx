@@ -29,7 +29,7 @@ export default function Navbar() {
             Contact
           </Link>
         </div>
-
+{/* ohehuffsduifuoiehff */}
         {/* Right section (placeholder for icons later) */}
         <div className="flex items-center gap-4 text-gray-700">
           <button className="hover:text-black transition">Login</button>
